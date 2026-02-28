@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/Login.css" type="text/css">
+    <link rel="stylesheet" href="../css/style.css" type="text/css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" type="text/css">
+</head>
+<body>
+    <header class="header">
+        <a href="../index.html" class="Logo">MNK<span>FastFood</span></a>
+        <nav class="navbar">
+            <a id="homeLink" href="../index.html">Trang Chủ</a>
+            <a id="productLink" href="./Menu.html">Menu</a>
+            <a id="aboutLink" href="#">Giới Thiệu</a>
+            <a id="contactLink" href="./LienHe.html">Liên Hệ</a>
+        </nav>
+        <div class="header-menu-right">
+            <div class="search__bar">
+                <i class='bx bx-search'></i>
+            </div>
+
+            <div class="shopping-cart">
+                <i class='bx bx-cart'></i>
+            </div>
+            <button class="btn" onclick="window.location.href='./login.html'">Login</button>
+        </div>
+    </header>
+
+    <div class="wrapper">
+        <div class="form-login">
+            <form id="loginForm">
+                <h2>Login</h2>
+                <div class="input-group">
+                    <span class="icon"><ion-icon name="person-circle"></ion-icon></span>
+                    <input type="text" name="username" id="username" required>
+                    <label for="username">Username</label>
+                </div>
+                <div class="input-group">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></ion-icon></span>
+                    <input type="password" name="password" id="password" required>
+                    <label for="password">Password</label>
+                </div>
+                <div class="remember">
+                    <input type="checkbox" name="Checkbox" id="remember">
+                    <label for="Checkbox">Remember me</label>
+                </div>
+                <button class="btnLogin" type="button" onclick="checkLogin()">Login</button>
+                <div class="signupLink">
+                    <p>Forgot your password? <a class="login-link" href="#" onclick="showRecoveryForm()">Account Recovery</a></p>
+                    <p>Don't have an account? <a class="signupbtn-link" href="#" onclick="showSignupForm()">Sign Up</a></p>
+                </div>
+            </form>
+
+            <form id="signupForm" style="display: none;">
+                <h2>Sign Up</h2>
+                <div class="input-group">
+                    <span class="icon"><ion-icon name="person-circle"></ion-icon></span>
+                    <input type="text" name="newUsername" id="newUsername" required>
+                    <label for="newUsername">New Username</label>
+                </div>
+                <div class="input-group">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input type="email" name="newEmail" id="newEmail" required>
+                    <label for="newEmail">Email</label>
+                </div>
+                <div class="input-group">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></ion-icon></span>
+                    <input type="password" name="newPassword" id="newPassword" required>
+                    <label for="newPassword">New Password</label>
+                </div>
+                <div class="Agree">
+                    <input type="checkbox" name="Checkbox" id="Agree">
+                    <label for="Checkbox">I agree other terms & continuous</label>
+                </div>
+                <button class="btnLogin" type="button" onclick="signup()">Sign Up</button>
+                <div class="signupLink">
+                    <p>Forgot your password? <a class="login-link" href="#" onclick="showRecoveryForm()">Account Recovery</a></p>
+                    <p>Already have an account <a class="login-link" href="#" onclick="showLoginForm()">Sign in</a></p>
+                </div>
+            </form>
+
+            <form id="recoveryForm" style="display: none;">
+                <h2>Account Recovery</h2>
+                <div class="input-group">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input type="text" name="recoveryEmailPhone" id="recoveryEmailPhone" required>
+                    <label for="recoveryEmailPhone">Email or Phone</label>
+                </div>
+                <div class="recoveryOptions">
+                    <input type="radio" name="recoveryOption" id="recoveryOptionEmail" value="Email">
+                    <label for="recoveryOptionEmail">Email</label>
+                    <input type="radio" name="recoveryOption" id="recoveryOptionPhone"value="Phone">
+                    <label for="recoveryOptionPhone">Phone</label>
+                </div>
+                <button class="btnLogin" type="button" onclick="sendRecoveryRequest()">Send Recovery Request</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <h3>Contact Us</h3>
+                <p>Email: 22661144@kthcm.edu.vn</p>
+                <p>Sđt: 097204022615</p>
+                <p>Địa Chỉ: 186H/2 Bình Thới,phường 14,Quận 11</p>
+            </div>
+            <div class="footer-content">
+                <h3>MNK <span>FastFood</span></h3>
+                <ul class="list">
+                    <li><a href="index.html"></a>Trang Chủ</li>
+                    <li><a href="trangcon/Menu.html"></a>Menu</li>
+                    <li><a href="#"></a>Giới Thiệu</li>
+                    <li><a href="trangcon/LienHe.html"></a>Liên Hệ</li>
+                </ul>
+            </div>
+            <div class="footer-content">
+                <h3>Follow Us</h3>
+                <ul class="social-icons">
+                    <li><a href=""><i class='bx bxl-facebook-circle' ></i></a></li>
+                    <li><a href=""><i class='bx bxl-tiktok' ></i></a></li>
+                    <li><a href=""><i class='bx bxl-instagram-alt' ></i></a></li>
+                    <li><a href=""><i class='bx bxl-youtube' ></i></a></li>
+                </ul>   
+            </div>
+        </div>
+        <div class="bottom-bar">
+            <p>2023 MNKFastFood. All rights reserved</p>
+        </div>
+    </footer>
+
+    <script src="../javascript/login.js" type="text/javascript"></script>
+</body>
+</html>

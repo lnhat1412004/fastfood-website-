@@ -1,0 +1,86 @@
+#comment {
+    /*width: 1012px;*/
+    height: 478px;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#comment h2{
+    text-align: center;
+    margin-bottom: 50px;
+    font-size:65px;
+    color:#82C0C0;
+}
+
+
+#comment-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+    height: 400px;
+    list-style: none;
+    overflow: hidden;
+}
+
+#list-wrapper {
+    overflow: hidden;
+}
+
+#list-comment {
+    display: flex;
+    height: 100%;
+    list-style: none;
+    transition:0.5s;
+    width:100%
+}
+
+#list-comment .item {
+    flex: 0 0 100%;
+    width: 100%;
+    background:#362f2f;
+    border-radius: 20px;
+    padding-top:50px;
+}
+
+#list-comment .item .avatar {
+    text-align: center;
+    margin-top:13px;
+}
+
+#list-comment .item .stars {
+    display: flex;
+    margin:0px auto;
+    width: 50%;
+    margin-top:32px;
+    justify-content: center;
+    align-items: center;
+}
+
+#list-comment .item .name {
+    text-align: center;
+    font-weight: bold;
+    color:coral;
+    font-size: 20px;
+}
+
+#list-comment .item .text {
+    padding:20px 50px;
+    color:#fff;
+    font-size: 18px;
+    text-overflow: ellipsis;
+}
+
+@media screen and (max-width: 768px) {
+    #comment-body {
+        width: 400px;
+    }
+    #list-comment .item .stars {
+        margin-top: 12px;
+    }
+    #list-comment .item .text {
+        padding: 10px 16px;
+    }
+}
