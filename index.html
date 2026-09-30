@@ -4,23 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nhatlm.com</title>
+
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" type="text/css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" type="text/css">
     <link rel="stylesheet" href="css/comment.css" type="text/css">
 </head>
+
 <body>
-    
+
     <header class="header">
         <a href="./index.html" class="Logo">Nhat<span>lm.com</span></a>
+
         <nav class="navbar">
             <a id="homeLink" href="./index.html">Trang Chủ</a>
             <a id="productLink" href="trangcon/Menu.html">Menu</a>
             <a id="aboutLink" href="#">Giới Thiệu</a>
             <a id="contactLink" href="trangcon/LienHe.html">Liên hệ</a>
         </nav>
-        
+
         <div class="header-menu-right">
+
             <div class="search__bar">
                 <i class='bx bx-search'></i>
             </div>
@@ -28,315 +32,597 @@
             <div class="shopping-cart">
                 <i class='bx bx-cart'></i>
             </div>
-            
-            <button class="btn" onclick="window.location.href='trangcon/login.html'">Đăng Nhập</button>
+
+            <button class="btn" onclick="window.location.href='trangcon/login.html'">
+                Đăng Nhập
+            </button>
+
         </div>
     </header>
 
+
     <section class="home-section">
+
         <div class="text-content">
+
             <h5>Sản Phẩm Nổi Bật</h5>
-            
-            <h2> Laptop - Máy Tính </h2>
-            <p>Laptop chính hãng với đa dạng cấu hình, đáp ứng mọi nhu cầu từ học tập,
-        văn phòng đến thiết kế đồ họa và gaming. Sản phẩm được lựa chọn kỹ,
-        hiệu năng ổn định, thiết kế hiện đại và phù hợp với nhiều mức ngân sách. </p>
-            
-            <button  class="cta-button" onclick="window.location.href='trangcon/ChiTietSP.html?id=2';">Xem Ngay</button>
+
+            <h2>Laptop - Máy Tính</h2>
+
+            <p>
+                Laptop chính hãng với đa dạng cấu hình, đáp ứng mọi nhu cầu từ học tập,
+                văn phòng đến thiết kế đồ họa và gaming. Sản phẩm được lựa chọn kỹ,
+                hiệu năng ổn định, thiết kế hiện đại và phù hợp với nhiều mức ngân sách.
+            </p>
+
+            <button
+                class="cta-button"
+                onclick="window.location.href='trangcon/ChiTietSP.html?id=2';">
+                Xem Ngay
+            </button>
+
         </div>
+
         <div class="image-section">
             <img src="img/banner.png" alt="">
             <div class="shadow"></div>
         </div>
+
     </section>
 
-   <section class="Product-section">
-    <h2 class="heading">SẢN PHẨM NỔI BẬT</h2>
 
-    <div class="swiper mySwiper">
-        <div class="swiper-wrapper ProductGallery">
+    <section class="Product-section">
 
-            <div class="swiper-slide">
-                <div class="food-image">
+        <h2 class="heading">SẢN PHẨM NỔI BẬT</h2>
 
-                    <img src="img/laptop.jpg" alt="Laptop">
+        <div class="swiper mySwiper">
 
-                    <div class="inner-text">
+            <div class="swiper-wrapper ProductGallery">
 
-                        <h2>LAPTOP VĂN PHÒNG</h2>
 
-                        <p class="product-note">
-                            Intel Core i5, RAM 16GB, SSD 512GB,
-                            màn hình Full HD, phù hợp học tập và văn phòng.
-                        </p>
+                <!-- SẢN PHẨM 1 -->
 
-                        <div class="price-section">
+                <div class="swiper-slide">
 
-                            <span>15.990.000đ</span>
+                    <div class="food-image">
 
-                            <button onclick="window.location.href='trangcon/ChiTietSP.html?id=1';">
-                                Xem Chi Tiết
-                            </button>
-                                
+                        <img src="img/laptop.jpg" alt="Laptop">
+
+                        <div class="inner-text">
+
+                            <h2>LAPTOP VĂN PHÒNG</h2>
+
+                            <p class="product-note">
+                                Intel Core i5, RAM 16GB, SSD 512GB,
+                                màn hình Full HD, phù hợp học tập và văn phòng.
+                            </p>
+
+                            <div class="price-section">
+
+                                <span>15.990.000đ</span>
+
+                                <button
+                                    onclick="window.location.href='trangcon/ChiTietSP.html?id=1';">
+                                    Xem Chi Tiết
+                                </button>
+
                             </div>
-                            
+
                         </div>
 
                     </div>
+
                 </div>
 
-                <div class=" swiper-slide">
+
+                <!-- SẢN PHẨM 2 -->
+
+                <div class="swiper-slide">
+
                     <div class="food-image">
-                        <img src="img/mon2.jpg" alt="">
+
+                        <img src="img/mon2.jpg" alt="Khổ qua cà ớt">
+
                         <div class="inner-text">
-                            <h2> KHỔ QUA CÀ ỚT ( MÌ GÓI) </h2>
+
+                            <h2>KHỔ QUA CÀ ỚT (MÌ GÓI)</h2>
+
+                            <p class="product-note">
+                                Khổ qua, cà, ớt, đậu bún, đậu hủ,
+                                da heo, chả cá, huyết...
+                            </p>
+
                             <div class="price-section">
+
                                 <span>55.000đ</span>
-                                <button onclick="window.location.href='trangcon/ChiTietSP.html?id=2';">Chi Tiết Món Ăn</button>
-                                <p class="product-note">
-                                    Khổ qua, cà, ớt, đậu bún, đậu hủ, da heo, chả cá, huyết... 
-                                </p>
+
+                                <button
+                                    onclick="window.location.href='trangcon/ChiTietSP.html?id=2';">
+                                    Chi Tiết Món Ăn
+                                </button>
+
                             </div>
+
                         </div>
+
                     </div>
+
                 </div>
 
+
+                <!-- SẢN PHẨM 3 -->
+
                 <div class="swiper-slide">
+
                     <div class="food-image">
 
-                        <img src="img/mon3.png" alt="">
+                        <img src="img/mon3.png" alt="Combo khổ qua 3">
+
                         <div class="inner-text">
+
                             <h2>Combo khổ qua 3</h2>
+
                             <div class="price-section">
+
                                 <span>350.000đ</span>
-                                <button onclick="window.location.href='trangcon/ChiTietSP.html?id=3';">Chi Tiết Món Ăn</button>
+
+                                <button
+                                    onclick="window.location.href='trangcon/ChiTietSP.html?id=3';">
+                                    Chi Tiết Món Ăn
+                                </button>
+
                             </div>
+
                         </div>
+
                     </div>
+
                 </div>
 
+
+                <!-- SẢN PHẨM 4 -->
+
                 <div class="swiper-slide">
+
                     <div class="food-image">
-                        <img src="img/mon4.png" alt="">
+
+                        <img src="img/mon4.png" alt="Sản phẩm">
+
                         <div class="inner-text">
+
                             <h2></h2>
+
                             <div class="price-section">
+
                                 <span>59.000đ</span>
-                                <button onclick="window.location.href='trangcon/ChiTietSP.html?id=4';">Chi Tiết Món Ăn</button>
+
+                                <button
+                                    onclick="window.location.href='trangcon/ChiTietSP.html?id=4';">
+                                    Chi Tiết Món Ăn
+                                </button>
+
                             </div>
+
                         </div>
+
                     </div>
+
                 </div>
 
+
+                <!-- SẢN PHẨM 5 -->
+
                 <div class="swiper-slide">
+
                     <div class="food-image">
-                        <img src="img/mon5.png" alt="">
+
+                        <img src="img/mon5.png" alt="Bánh Cuộn Mexicana">
+
                         <div class="inner-text">
+
                             <h2>Bánh Cuộn Mexicana</h2>
+
                             <div class="price-section">
+
                                 <span>75.000đ</span>
-                                <button onclick="window.location.href='trangcon/ChiTietSP.html?id=5';">Chi Tiết Món Ăn</button>
+
+                                <button
+                                    onclick="window.location.href='trangcon/ChiTietSP.html?id=5';">
+                                    Chi Tiết Món Ăn
+                                </button>
+
                             </div>
+
                         </div>
+
                     </div>
+
                 </div>
 
-                <div class=" swiper-slide">
-                    <div class="food-image">
-                        <img src="img/mon7.jpg" alt="">
-                        <div class="inner-text">
-                            <h2>Mỳ Ý 4Z - Mix & Match </h2>
-                            <div class="price-section">
-                                <span>200.000đ</span>
-                                <button onclick="window.location.href='trangcon/ChiTietSP.html?id=6';">Chi Tiết Món Ăn</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
+                <!-- SẢN PHẨM 6 -->
 
                 <div class="swiper-slide">
+
                     <div class="food-image">
-                        <img src="img/mon6.png" alt="">
+
+                        <img src="img/mon7.jpg" alt="Mỳ Ý">
+
                         <div class="inner-text">
-                            <h2>Khoai Tây Sốt Phô Mai</h2>
+
+                            <h2>Mỳ Ý 4Z - Mix & Match</h2>
+
                             <div class="price-section">
-                                <span>40.000đ</span>
-                                <button onclick="window.location.href='trangcon/ChiTietSP.html?id=7';">Chi Tiết Món Ăn</button>
+
+                                <span>200.000đ</span>
+
+                                <button
+                                    onclick="window.location.href='trangcon/ChiTietSP.html?id=6';">
+                                    Chi Tiết Món Ăn
+                                </button>
+
                             </div>
+
                         </div>
+
                     </div>
+
                 </div>
 
-                <div class=" swiper-slide">
+
+                <!-- SẢN PHẨM 7 -->
+
+                <div class="swiper-slide">
+
                     <div class="food-image">
-                        <img src="img/mon8.png" alt="">
+
+                        <img src="img/mon6.png" alt="Khoai Tây Sốt Phô Mai">
+
                         <div class="inner-text">
-                            <h2>Gà Sốt Bơ Tỏi</h2>
+
+                            <h2>Khoai Tây Sốt Phô Mai</h2>
+
                             <div class="price-section">
-                                <span>250.000đ</span>
-                                <button onclick="window.location.href='trangcon/ChiTietSP.html?id=8';">Chi Tiết Món Ăn</button>
+
+                                <span>40.000đ</span>
+
+                                <button
+                                    onclick="window.location.href='trangcon/ChiTietSP.html?id=7';">
+                                    Chi Tiết Món Ăn
+                                </button>
+
                             </div>
+
                         </div>
+
                     </div>
+
                 </div>
+
+
+                <!-- SẢN PHẨM 8 -->
+
+                <div class="swiper-slide">
+
+                    <div class="food-image">
+
+                        <img src="img/mon8.png" alt="Gà Sốt Bơ Tỏi">
+
+                        <div class="inner-text">
+
+                            <h2>Gà Sốt Bơ Tỏi</h2>
+
+                            <div class="price-section">
+
+                                <span>250.000đ</span>
+
+                                <button
+                                    onclick="window.location.href='trangcon/ChiTietSP.html?id=8';">
+                                    Chi Tiết Món Ăn
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
 
             </div>
+
+
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
+
         </div>
+
     </section>
 
+
     <section>
+
         <div id="comment">
+
             <h2>Nhận Xét của Khách Hàng</h2>
+
             <div id="comment-body">
+
                 <div class="prev">
                     <a href="#">
                         <img src="img/prev.png" alt="">
                     </a>
                 </div>
+
                 <div id="list-wrapper">
-                <ul id="list-comment">
-                    <li class="item">
-                        <div class="avatar">
-                            <img src="img/avatar_1.png" alt="">
 
-                        </div>
-                        <div class="stars">
-                            <span>
-                                <img src="img/star.png" alt="">
-                            </span>
-                            <span>
-                                <img src="img/star.png" alt="">
-                            </span>
-                            <span>
-                                <img src="img/star.png" alt="">
-                            </span>
-                            <span>
-                                <img src="img/star.png" alt="">
-                            </span>
-                            <span>
-                                <img src="img/star.png" alt="">
-                            </span>
-                        </div>
-                        <div class="name">Nguyễn Quang Minh</div>
+                    <ul id="list-comment">
 
-                        <div class="text">
-                            <p>"MNKFastFood" là điểm đến lý tưởng cho những người yêu thích đồ ăn nhanh mà vẫn đảm bảo hương vị tuyệt vời. Thực đơn đa dạng với các món ăn phổ biến được chế biến nhanh chóng mà vẫn giữ được chất lượng. Quán có không gian thoải mái và sôi động, phù hợp cho cả nhóm bạn trẻ hay gia đình nhỏ muốn thưởng thức những bữa ăn vừa nhanh chóng vừa ngon miệng.</p>
-                        </div>
-                    </li>
-                    <li class="item">
-                        <div class="avatar">
-                            <img src="img/avatar_1.png" alt="">
 
-                        </div>
-                        <div class="stars">
-                            <span>
-                                <img src="img/star.png" alt="">
-                            </span>
-                            <span>
-                                <img src="img/star.png" alt="">
-                            </span>
-                            <span>
-                                <img src="img/star.png" alt="">
-                            </span>
-                            <span>
-                                <img src="img/star.png" alt="">
-                            </span>
-                        </div>
-                        <div class="name">Lê Minh Nhật</div>
+                        <li class="item">
 
-                        <div class="text">
-                            <p>Đội ngũ nhân viên ở đây rất nhanh nhẹn và thân thiện. Họ giúp đỡ khách hàng chọn món, tư vấn về thực đơn và phục vụ một cách nhiệt tình.</p>
-                        </div>
-                    </li>
-                    <li class="item">
-                        <div class="avatar">
-                            <img src="img/avatar_1.png" alt="">
-                        </div>
-                        <div class="stars">
-                            <span>
-                                <img src="img/star.png" alt="">
-                            </span>
-                            <span>
-                                <img src="img/star.png" alt="">
-                            </span>
-                            <span>
-                                <img src="img/star.png" alt="">
-                            </span>
-                            <span>
-                                <img src="img/star.png" alt="">
-                            </span>
-                            <span>
-                                <img src="img/star.png" alt="">
-                            </span>
-                        </div>
-                        <div class="name">Nguyễn Đặng Duy Kha</div>
+                            <div class="avatar">
+                                <img src="img/avatar_1.png" alt="">
+                            </div>
 
-                        <div class="text">
-                            <p>Giá cả ở "MNKFastFood" khá hợp lý so với chất lượng đồ ăn và dịch vụ được cung cấp. Có nhiều ưu đãi và combo giá trị, phù hợp cho mọi đối tượng khách hàng.</p>
-                        </div>
-                    </li>
-                </ul>
+                            <div class="stars">
+
+                                <span><img src="img/star.png" alt=""></span>
+                                <span><img src="img/star.png" alt=""></span>
+                                <span><img src="img/star.png" alt=""></span>
+                                <span><img src="img/star.png" alt=""></span>
+                                <span><img src="img/star.png" alt=""></span>
+
+                            </div>
+
+                            <div class="name">
+                                Nguyễn Quang Minh
+                            </div>
+
+                            <div class="text">
+
+                                <p>
+                                    "MNKFastFood" là điểm đến lý tưởng cho những người yêu thích
+                                    đồ ăn nhanh mà vẫn đảm bảo hương vị tuyệt vời. Thực đơn đa dạng
+                                    với các món ăn phổ biến được chế biến nhanh chóng mà vẫn giữ được
+                                    chất lượng. Quán có không gian thoải mái và sôi động, phù hợp cho
+                                    cả nhóm bạn trẻ hay gia đình nhỏ muốn thưởng thức những bữa ăn vừa
+                                    nhanh chóng vừa ngon miệng.
+                                </p>
+
+                            </div>
+
+                        </li>
+
+
+                        <li class="item">
+
+                            <div class="avatar">
+                                <img src="img/avatar_1.png" alt="">
+                            </div>
+
+                            <div class="stars">
+
+                                <span><img src="img/star.png" alt=""></span>
+                                <span><img src="img/star.png" alt=""></span>
+                                <span><img src="img/star.png" alt=""></span>
+                                <span><img src="img/star.png" alt=""></span>
+
+                            </div>
+
+                            <div class="name">
+                                Lê Minh Nhật
+                            </div>
+
+                            <div class="text">
+
+                                <p>
+                                    Đội ngũ nhân viên ở đây rất nhanh nhẹn và thân thiện.
+                                    Họ giúp đỡ khách hàng chọn món, tư vấn về thực đơn và phục vụ
+                                    một cách nhiệt tình.
+                                </p>
+
+                            </div>
+
+                        </li>
+
+
+                        <li class="item">
+
+                            <div class="avatar">
+                                <img src="img/avatar_1.png" alt="">
+                            </div>
+
+                            <div class="stars">
+
+                                <span><img src="img/star.png" alt=""></span>
+                                <span><img src="img/star.png" alt=""></span>
+                                <span><img src="img/star.png" alt=""></span>
+                                <span><img src="img/star.png" alt=""></span>
+                                <span><img src="img/star.png" alt=""></span>
+
+                            </div>
+
+                            <div class="name">
+                                Nguyễn Đặng Duy Kha
+                            </div>
+
+                            <div class="text">
+
+                                <p>
+                                    Giá cả ở "MNKFastFood" khá hợp lý so với chất lượng đồ ăn
+                                    và dịch vụ được cung cấp. Có nhiều ưu đãi và combo giá trị,
+                                    phù hợp cho mọi đối tượng khách hàng.
+                                </p>
+
+                            </div>
+
+                        </li>
+
+
+                    </ul>
+
                 </div>
+
+
                 <div class="next">
+
                     <a href="#">
                         <img src="img/next.png" alt="">
                     </a>
+
                 </div>
+
             </div>
+
         </div>
+
     </section>
 
+
     <section>
+
         <div class="title">
             <h2 class="heading">About Us</h2>
         </div>
+
         <div class="box-about">
+
             <div class="about-content">
+
                 <h2>Welcome To Website</h2>
-                <p>Xin chào! Mình là Lê Minh Nhật, người xây dựng website này với niềm yêu thích dành cho máy tính và công nghệ. Website được tạo ra nhằm giới thiệu và cung cấp các sản phẩm Laptop, PC, linh kiện máy tính và phần mềm, giúp bạn dễ dàng tìm kiếm sản phẩm phù hợp với nhu cầu học tập, làm việc, giải trí và nâng cấp máy tính.</p>
-                <button class="cta-button">Khám Phá</button>
+
+                <p>
+                    Xin chào! Mình là Lê Minh Nhật, người xây dựng website này
+                    với niềm yêu thích dành cho máy tính và công nghệ. Website được
+                    tạo ra nhằm giới thiệu và cung cấp các sản phẩm Laptop, PC,
+                    linh kiện máy tính và phần mềm, giúp bạn dễ dàng tìm kiếm sản phẩm
+                    phù hợp với nhu cầu học tập, làm việc, giải trí và nâng cấp máy tính.
+                </p>
+
+                <button class="cta-button">
+                    Khám Phá
+                </button>
+
             </div>
+
+
             <div class="about-image">
-                <img src="img/combo_c.png">
+
+                <img src="img/combo_c.png" alt="">
+
             </div>
+
         </div>
+
     </section>
 
+
     <footer>
+
         <div class="container">
+
+
             <div class="footer-content">
+
                 <h3>Về Mình</h3>
-                <p>Email: nhatlm@maytinhcdc.vn </p>
-                <p>Sđt: 0777636297 </p>
-                <p>Địa Chỉ: 28Bis Nguyễn Văn Vĩnh, Quận Tân Bình </p>
+
+                <p>Email: nhatlm@maytinhcdc.vn</p>
+
+                <p>Sđt: 0777636297</p>
+
+                <p>Địa Chỉ: 28Bis Nguyễn Văn Vĩnh, Quận Tân Bình</p>
+
             </div>
+
+
             <div class="footer-content">
+
                 <h3>nhat<span>lm</span></h3>
+
                 <ul class="list">
-                    <li><a href="index.html"></a>Laptop & Máy Tính</li>
-                    <li><a href="trangcon/Menu.html"></a>Linh Kiện Máy Tính</li>
-                    <li><a href="#"></a>Phần Mềm</li>
-                    <li><a href="trangcon/LienHe.html"></a>Tư Vấn & Hỗ Trợ</li>
-                     <li><a href="trangcon/LienHe.html"></a>Liên Hệ</li>
+
+                    <li>
+                        <a href="index.html">Laptop & Máy Tính</a>
+                    </li>
+
+                    <li>
+                        <a href="trangcon/Menu.html">Linh Kiện Máy Tính</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Phần Mềm</a>
+                    </li>
+
+                    <li>
+                        <a href="trangcon/LienHe.html">Tư Vấn & Hỗ Trợ</a>
+                    </li>
+
+                    <li>
+                        <a href="trangcon/LienHe.html">Liên Hệ</a>
+                    </li>
+
                 </ul>
+
             </div>
+
+
             <div class="footer-content">
+
                 <h3>Follow Us</h3>
+
                 <ul class="social-icons">
-                    <li><a href=""><i class='bx bxl-facebook-circle' ></i></a></li>
-                    <li><a href=""><i class='bx bxl-tiktok' ></i></a></li>
-                    <li><a href=""><i class='bx bxl-instagram-alt' ></i></a></li>
-                    <li><a href=""><i class='bx bxl-youtube' ></i></a></li>
-                </ul>   
+
+                    <li>
+                        <a href="">
+                            <i class='bx bxl-facebook-circle'></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="">
+                            <i class='bx bxl-tiktok'></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="">
+                            <i class='bx bxl-instagram-alt'></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="">
+                            <i class='bx bxl-youtube'></i>
+                        </a>
+                    </li>
+
+                </ul>
+
             </div>
+
         </div>
+
+
         <div class="bottom-bar">
+
             <p>© 2026 Minh Nhật Technology. All Rights Reserved.</p>
+
         </div>
+
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" type="text/javascript"></script>
-    <script src="javascript/index.js" type="text/javascript"></script>
+
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
+        type="text/javascript">
+    </script>
+
+    <script
+        src="javascript/index.js"
+        type="text/javascript">
+    </script>
+
 </body>
 </html>
